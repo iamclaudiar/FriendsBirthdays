@@ -1,6 +1,7 @@
 # FriendsBirthdays
 Web application to store birthdays of friends.
 
+# Java Backend:
 https://start.spring.io/
 Spring initializr:
   Project - Maven
@@ -9,3 +10,9 @@ Spring initializr:
   Packaging - jar
   Java - 17
   Dependencies: Spring Web (Web), Spring Data JPA (SQL), MySQL Server (SQL)
+
+# React Frontend:
+  New React App: 
+    npx create-react-app my-app
+    cd my-app
+    npm start
