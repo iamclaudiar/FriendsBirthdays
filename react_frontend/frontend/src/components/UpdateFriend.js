@@ -7,7 +7,7 @@ function UpdateFriend() {
     first_name: '',
     last_name: '',
     email: '',
-    birth: '',
+    birthday: '',
   });
 
   const handleChange = (event) => {
@@ -27,7 +27,7 @@ function UpdateFriend() {
       first_name: formData.first_name,
       last_name: formData.last_name,
       email: formData.email,
-      birth: formData.birth,
+      birthday: formData.birthday,
     };
 
     try {
@@ -45,13 +45,13 @@ function UpdateFriend() {
       <label>
         ID:
         <input
-          type="text"
+          type="number"
           name="id"
           value={formData.id}
           onChange={handleChange}
         />
       </label>
-      <br />
+      <br/>
       <label>
         First Name:
         <input
@@ -61,7 +61,7 @@ function UpdateFriend() {
           onChange={handleChange}
         />
       </label>
-      <br />
+      <br/>
       <label>
         Last Name:
         <input
@@ -71,7 +71,7 @@ function UpdateFriend() {
           onChange={handleChange}
         />
       </label>
-      <br />
+      <br/>
       <label>
         Email:
         <input
@@ -81,17 +81,17 @@ function UpdateFriend() {
           onChange={handleChange}
         />
       </label>
-      <br />
+      <br/>
       <label>
-        Birth Date:
+        Birthday:
         <input
           type="date"
-          name="birth"
-          value={formData.birth}
+          name="birthday"
+          value={formData.birthday}
           onChange={handleChange}
         />
       </label>
-      <br />
+      <br/>
       <button type="submit">Update</button>
     </form>
     </div>

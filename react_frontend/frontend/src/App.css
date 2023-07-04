@@ -19,6 +19,11 @@ body {
   /* color: #333; */
 }
 
+.Friend {
+  background-color: #E68963;
+  border-radius: 20px;
+}
+
 .Content {
   display: flex;
   justify-content: center;

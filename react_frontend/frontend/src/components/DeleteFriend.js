@@ -28,12 +28,12 @@ function DeleteFriend() {
       <label>
         Friend ID:
         <input
-          type="text"
+          type="number"
           value={friendId}
           onChange={handleChange}
         />
       </label>
-      <br />
+      <br/>
       <button type="submit">Delete Friend</button>
     </form>
     </div>
