@@ -17,4 +17,5 @@ Spring initializr:
     cd my-app
     npm start
 
+# Web application:
 ![alt text](https://github.com/iamclaudiar/FriendsBirthdays/blob/main/BirthDateBook_App.PNG)
