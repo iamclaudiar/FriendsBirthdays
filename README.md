@@ -16,6 +16,8 @@ Spring initializr: \
     npx create-react-app my-app \
     cd my-app \
     npm start
+    
+# SQL Database
 
 # Web application:
 ![image with the web application](https://github.com/iamclaudiar/FriendsBirthdays/blob/main/BirthDateBook_App.PNG)
