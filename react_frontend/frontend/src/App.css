@@ -12,8 +12,9 @@ body {
 
 .Header {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
+  padding-left: 30px;
   width: 100%;
   background-color: #F9DCC5;
   /* color: #333; */
