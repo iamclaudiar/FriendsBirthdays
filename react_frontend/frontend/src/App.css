@@ -1,3 +1,61 @@
-.App {
+body {
+  background-color: #F3C3B0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  /* background-color: #F3C3B0; */
+}
+
+.Header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #F9DCC5;
+  /* color: #333; */
+}
+
+.Content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.LeftColumn {
+  /* flex: 1; */
+  /* text-align: center; */
+  background-color: #F9DCC5;
+  margin-right: 20px;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  flex-basis: 45%;
+}
+
+.RightColumn {
+  /* flex: 1; */
+  /* text-align: center; */
+  background-color: #F9DCC5;
+  margin-left: 20px;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  flex-basis: 45%;
+}
+
+.Component {
+  background-color: #F3C3B0;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
 }

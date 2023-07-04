@@ -33,16 +33,14 @@ function UpdateFriend() {
     try {
       const response = await axios.put(url, null, { params: data });
       console.log(response.data);
-      // Aici poți gestiona răspunsul primit după ce requestul a fost efectuat cu succes
     } catch (error) {
       console.error(error);
-      // Aici poți gestiona eroarea în cazul în care requestul a eșuat
     }
   };
 
   return (
     <div className='UpdateFriend'>
-            <h1>Update friend by ID</h1>
+            <h1>UPDATE FRIEND BY ID</h1>
     <form onSubmit={handleSubmit}>
       <label>
         ID:

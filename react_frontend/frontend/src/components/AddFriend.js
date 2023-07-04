@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-// import React from 'react';
 import axios from 'axios';
 
 function AddFriend() {
@@ -32,7 +31,7 @@ function AddFriend() {
     
       return (
         <div className='AddFriend'>
-            <h1>Add a new friend</h1>
+            <h1>ADD NEW FRIEND</h1>
         <form onSubmit={handleSubmit}>
           <label>
             First Name:

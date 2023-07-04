@@ -27,14 +27,16 @@ function ShowFriends() {
 
   return (
     <div className="ShowFriends">
-      <h1>Data from API</h1>
+      <h1>SHOW FRIENDS</h1>
       {data.map(item => (
         <div key={item.id}>
-          <p>ID: {item.id}</p>
-          <p>First Name: {item.first_name}</p>
-          <p>Last Name: {item.last_name}</p>
-          <p>Email: {item.email}</p>
-          <p>Birthday: {item.birth}</p>
+          <ul>
+            <li>ID: {item.id}</li>
+            <li>First Name: {item.first_name}</li>
+            <li>Last Name: {item.last_name}</li>
+            <li>Email: {item.email}</li>
+            <li>Birthday: {item.birth}</li>
+          </ul>
           <button onClick={() => handleUpdate(item.id)}>Update</button>
         </div>
       ))}
