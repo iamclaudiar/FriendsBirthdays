@@ -18,4 +18,4 @@ Spring initializr:
     npm start
 
 # Web application:
-![alt text](https://github.com/iamclaudiar/FriendsBirthdays/blob/main/BirthDateBook_App.PNG)
+![image with the web application](https://github.com/iamclaudiar/FriendsBirthdays/blob/main/BirthDateBook_App.PNG)
