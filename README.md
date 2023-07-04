@@ -16,3 +16,5 @@ Spring initializr:
     npx create-react-app my-app
     cd my-app
     npm start
+
+![alt text](https://github.com/iamclaudiar/FriendsBirthdays/blob/main/BirthDateBook_App.PNG)
