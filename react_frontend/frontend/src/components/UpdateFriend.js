@@ -40,10 +40,10 @@ function UpdateFriend() {
 
   return (
     <div className='UpdateFriend'>
-            <h1>UPDATE FRIEND BY ID</h1>
+    <h2>UPDATE FRIEND BY ID</h2>
     <form onSubmit={handleSubmit}>
       <label>
-        ID:
+        ID*:
         <input
           type="number"
           name="id"
@@ -92,7 +92,7 @@ function UpdateFriend() {
         />
       </label>
       <br/>
-      <button type="submit">Update</button>
+      <button type="submit" className="Button">Update</button>
     </form>
     </div>
   );

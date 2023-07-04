@@ -23,10 +23,10 @@ function DeleteFriend() {
 
   return (
     <div className='DeleteFriend'>
-    <h1>DELETE FRIEND BY ID</h1>
+    <h2>DELETE FRIEND BY ID</h2>
     <form onSubmit={handleSubmit}>
       <label>
-        Friend ID:
+        Friend ID*:
         <input
           type="number"
           value={friendId}
@@ -34,7 +34,7 @@ function DeleteFriend() {
         />
       </label>
       <br/>
-      <button type="submit">Delete Friend</button>
+      <button type="submit" className="Button">Delete</button>
     </form>
     </div>
   );

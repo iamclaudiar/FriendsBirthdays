@@ -27,7 +27,7 @@ function ShowFriends() {
 
   return (
     <div className="ShowFriends">
-      <h1>SHOW FRIENDS</h1>
+      <h2>SHOW FRIENDS</h2>
       {data.map(item => (
         <div className="Friend">
         <div key={item.id}>

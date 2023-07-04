@@ -1,10 +1,10 @@
 body {
-  background-color: #F3C3B0;
+  background-color: #fff8ee;
   font-family: Arial, Helvetica, sans-serif;
 }
 
  .App {
-  text-align: center;
+  text-align: left;
   display: flex;
   flex-direction: column;
   /* background-color: #F3C3B0; */
@@ -21,8 +21,10 @@ body {
 }
 
 .Friend {
-  background-color: #E68963;
+  background-color: #FFF8EE;
   border-radius: 20px;
+  padding-left: 20px;
+  margin: 10px;
 }
 
 .Content {
@@ -57,8 +59,15 @@ body {
 .Component {
   background-color: #F3C3B0;
   border-radius: 20px;
+  padding-left: 20px;
   padding: 10px;
   margin: 10px;
+}
+
+.Button {
+  background-color: #E6896B;
+  border-radius: 10px;
+  font-weight: bold;
 }
 
 ul {

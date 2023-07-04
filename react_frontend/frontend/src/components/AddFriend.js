@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 
 function AddFriend() {
-      const [formData, setFormData] = useState({
+      const [friendData, setFriendData] = useState({
         first_name: '',
         last_name: '',
         email: '',
@@ -10,8 +10,8 @@ function AddFriend() {
       });
     
       const handleChange = (event) => {
-        setFormData({
-          ...formData,
+        setFriendData({
+          ...friendData,
           [event.target.name]: event.target.value,
         });
       };
@@ -22,7 +22,7 @@ function AddFriend() {
         const url = 'http://localhost:8080/api/add';
     
         try {
-          const response = await axios.post(url, null, { params: formData });
+          const response = await axios.post(url, null, { params: friendData });
           console.log(response.data);
         } catch (error) {
           console.error(error);
@@ -31,14 +31,14 @@ function AddFriend() {
     
       return (
         <div className='AddFriend'>
-            <h1>ADD NEW FRIEND</h1>
+            <h2>ADD NEW FRIEND</h2>
         <form onSubmit={handleSubmit}>
           <label>
-            First Name:
+            First Name*: 
             <input
               type="text"
               name="first_name"
-              value={formData.first_name}
+              value={friendData.first_name}
               onChange={handleChange}
             />
           </label>
@@ -48,7 +48,7 @@ function AddFriend() {
             <input
               type="text"
               name="last_name"
-              value={formData.last_name}
+              value={friendData.last_name}
               onChange={handleChange}
             />
           </label>
@@ -58,22 +58,22 @@ function AddFriend() {
             <input
               type="email"
               name="email"
-              value={formData.email}
+              value={friendData.email}
               onChange={handleChange}
             />
           </label>
           <br/>
           <label>
-            Birth Date:
+            Birth Date*: 
             <input
               type="date"
               name="birthday"
-              value={formData.birthday}
+              value={friendData.birthday}
               onChange={handleChange}
             />
           </label>
           <br/>
-          <button type="submit">Submit</button>
+          <button type="submit" className="Button">Add</button>
         </form>
         </div>
       );
